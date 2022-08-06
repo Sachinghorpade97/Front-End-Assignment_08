@@ -1,0 +1,569 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Assignmrnt-07</title>
+</head>
+
+<body>
+
+
+    <style>
+        .bgcolor {
+            /* background-color: rgb(152, 136, 247); */
+            background: linear-gradient(249deg, rgba(0, 204, 27, 0.932) 12%, rgba(0, 0, 0, 0) 0%), radial-gradient(at -55% 77%, rgba(0, 204, 27, 0.932) 40%, rgb(229, 232, 243) -1402%);
+
+            padding-left: 2%;
+            padding-right: 2%;
+            padding-top: 4%;
+            padding-bottom: 4%;
+
+        }
+
+
+
+        /* -------------------------------------------------- */
+        .sidebar {
+
+            width: 155%;
+            background-color: white;
+
+            height: 100%;
+            /* position: absolute;  */
+
+            overflow: auto;
+
+
+
+
+
+        }
+
+        .sidebar a {
+
+            color: black;
+            padding-left: 28%;
+            text-decoration: none;
+            font-size: 26px;
+
+        }
+
+        .sb1 {
+            margin-left: -1.8%;
+        }
+
+        #changepass {
+            background-color: #ffffff;
+            border: none;
+            color: #20df70;
+            font-size: 13px;
+            margin-top: -37px;
+            margin-left: 48%;
+        }
+
+
+        .mycard11 {
+            box-shadow: 0px 25px 35px -15px rgb(124, 123, 123);
+        }
+
+        /* .nb1{
+           margin-right: -9%;
+
+        } */
+
+
+
+        @media screen and (max-width: 700px) {
+            .sidebar {
+                width: 100%;
+                height: auto;
+                position: relative;
+            }
+
+            .sidebar a {
+                float: left;
+            }
+
+            div.content {
+                margin-left: 0;
+            }
+        }
+
+        @media screen and (max-width: 400px) {
+            .sidebar a {
+                text-align: center;
+                float: none;
+            }
+        }
+
+        /* -------------------------------------------------------- */
+
+        @media only screen and (max-width: 767px) and (min-width: 2px) {
+            .sidebar {
+
+                display: none;
+            }
+        }
+
+        /* ------------------------------------------------------------ */
+        @media screen and (min-width: 768px) {
+            .sicon2::before {
+
+                margin-bottom: 40px !important;
+            }
+        }
+    </style>
+
+
+
+    <div class="container  bgcolor">
+        <div class="row">
+            <div class="col-md-12">
+                <!-- -------------------------------------------- -->
+
+
+
+
+                <div class="card mycard11" style="width: 100%;">
+                    <div class="card-body">
+
+                        <div class="row">
+
+                            <div class="sb1 side1 col-md-1">
+
+                                <div class="sidebar">
+
+
+                                    <a><i class="sicon2 fa fa-street-view"
+                                            style="color: rgba(0, 204, 27, 0.932); margin-top: 25px; margin-bottom: 50px"></i></a>
+
+                                    <a><i class=" sicon2 bi bi-ui-radios-grid" id="sicon2"></i></a>
+                                    <a><i class="sicon2 bi bi-person" style="color: rgba(0, 204, 27, 0.932);"></i></a>
+                                    <a><i class="sicon2 bi bi-clipboard"></i></a>
+                                    <a><i class="sicon2 bi bi-chat-right"></i></a>
+                                    <a><i class="sicon2 bi bi-chat-right-dots"></i> </a>
+                                    <a><i class="sicon2 bi bi-star"></i></a>
+
+                                </div>
+                            </div>
+
+                            <div class="nb1 col-md-11 col-sm-11">
+                                <nav class="navbar navbar-light topnav " style="width: 104%;">
+
+
+                                    <form class="form-inline mt-2 mb-2">
+                                        <a class="navbar-brand"><i class="bi bi-arrow-right text-muted"></i></a>
+                                        <input class="form-control mr-sm-2" type="search"
+                                            placeholder="Type in to Search..." aria-label=" Search">
+
+                                    </form>
+
+                                    <form class="form-inline">
+                                        <img src="navgr.png" alt="" style="width: 16%; height: 16%; margin-left: -9%;">&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <img src="navbel.png" alt="" style="width: 16%; height: 16%;">&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <img src="person.png" alt="" style="width: 16%; height: 16%;">
+                                        <div class="btn-group">
+                                            <button class="btn btn-md dropdown-toggle" type="button"
+                                                data-toggle="dropdown" aria-expanded="false">
+                                                George Kennedy&nbsp;&nbsp;&nbsp;&nbsp;
+                                            </button>
+                                            <div class="dropdown-menu">
+                                                ...
+                                            </div>
+                                        </div>
+
+
+                                    </form>
+                                </nav>
+
+                                <div class="card"
+                                    style="width: 104%; background-color: rgb(229, 232, 243); margin-bottom: -2%;">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <h4>
+                                                    <span class="text-muted">My Profile <i class="fa fa-angle-right"
+                                                            style="font-size:20px;"></i></span> Edit Profile
+
+                                                </h4>
+                                            </div>
+
+                                            <div class="col-md-8">
+                                                <button type="button"
+                                                    class="btn btn-success float-right mb-2 rounded-pill px-4"
+                                                    style="background-color: rgba(0, 204, 27, 0.932);">Save&nbsp;&nbsp;<i
+                                                        class="bi bi-arrow-right"></i></button>
+                                            </div>
+
+                                        </div>
+
+
+                                        <!--  -->
+                                        <div class="card" style="width: 100%;">
+                                            <div class="card-body">
+
+                                                <div class="row">
+                                                    <div class="col-md-5">
+                                                        <div class="card" style="width: 100%;  border: #ffffff;">
+                                                            <div class="card-body">
+
+
+                                                                <form class="row">
+                                                                    <div class="col-md-12 ">
+                                                                        <img src="./person.png"
+                                                                            style="width: 40%; margin-left: 31%;"
+                                                                            alt="">
+                                                                    </div>
+                                                                    <div class="col-md-6 mt-3">
+                                                                        <label for="inputName4 "
+                                                                            class="form-label">First
+                                                                            Name</label>
+                                                                        <input type="text" class="form-control"
+                                                                            id="inputName4" placeholder="Arthur">
+                                                                    </div>
+                                                                    <div class="col-md-6 mt-3">
+                                                                        <label for="inputLname4"
+                                                                            class="form-label  ">Last
+                                                                            Name</label>
+                                                                        <input type="text" class="form-control"
+                                                                            id="inputLname4" placeholder="Nancy">
+                                                                    </div>
+
+                                                                    <div class="col-md-12 mt-3">
+                                                                        <label for="inputEmail4 "
+                                                                            class="form-label ">Password</label>
+
+                                                                        <div class="input-group">
+                                                                            <input type="text" class="form-control"
+                                                                                placeholder="******"
+                                                                                aria-label="Recipient's username"
+                                                                                aria-describedby="basic-addon2"
+                                                                                style="border-right-style:none">
+                                                                            <div class="input-group-append">
+                                                                                <span class="input-group-text"
+                                                                                    style="background-color: white; color: rgba(0, 204, 27, 0.932); font-size: small; border-left-style:none">CHANGE
+                                                                                    PASSWRD</span>
+                                                                            </div>
+                                                                        </div>
+
+                                                                    </div>
+
+                                                                    <div class="col-md-12 mt-3">
+                                                                        <label for="inputEmail4 "
+                                                                            class="form-label ">Email</label>
+                                                                        <input type="email" class="form-control"
+                                                                            placeholder="bradiely.oritis@gmail.com"
+                                                                            id="inputEmail4">
+                                                                    </div>
+                                                                    <div class="col-md-12 mt-3">
+                                                                        <label for="inputZip" class="form-label  ">Phone
+                                                                            number</label>
+                                                                        <div class="input-group " id="phoneno"
+                                                                            style="border:rgb(150 94 255);;">
+                                                                            <input type="text"
+                                                                                style="box-shadow: none; color: rgb(150 94 255);"
+                                                                                class="form-control"
+                                                                                id="autoSizingInputGroup"
+                                                                                placeholder="477-046-1827">
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="col-md-12 mt-3">
+                                                                        <label for="inputAddress "
+                                                                            class="form-label ">Address</label>
+                                                                        <input type="text" class="form-control"
+                                                                            id="inputAddress"
+                                                                            placeholder="116 Jaskolski Stravine Suite 883">
+                                                                    </div>
+                                                                    <div class="col-md-12 mt-3">
+                                                                        <label for="inputAddress "
+                                                                            class="form-label ">Nation</label>
+                                                                        <input type="text" class="form-control"
+                                                                            id="inputAddress" placeholder="Colombia">
+                                                                    </div>
+
+                                                                </form>
+
+
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                    <div class="col-md-7">
+                                                        <div class="card" style="width: 100%;  border: #ffffff;">
+                                                            <div class="card-body">
+                                                                <form>
+                                                                    <div class="form-row" style="margin-top: -4%;">
+                                                                        <div class="form-group col-md-6">
+                                                                            <label for="inputState">Gender</label>
+                                                                            <select id="inputState"
+                                                                                class="form-control">
+                                                                                <option selected>Male</option>
+                                                                                <option>Female</option>
+                                                                            </select>
+                                                                        </div>
+                                                                        <div class="form-group col-md-6">
+                                                                            <label for="inputState">Language</label>
+                                                                            <select id="inputState"
+                                                                                class="form-control">
+                                                                                <option selected>English</option>
+                                                                                <option>Marathi</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="form-row">
+                                                                        <div class="form-group col-md-4">
+                                                                            <label for="inputState">Date of
+                                                                                Birth</label>
+                                                                            <select id="inputState"
+                                                                                class="form-control">
+                                                                                <option selected>September</option>
+                                                                                <option>...</option>
+                                                                            </select>
+                                                                        </div>
+                                                                        <div class="form-group col-md-2">
+                                                                            <label for="inputState"
+                                                                                style="color: white;">.</label>
+                                                                            <select id="inputState"
+                                                                                class="form-control">
+                                                                                <option selected>31</option>
+                                                                                <option>...</option>
+                                                                            </select>
+                                                                        </div>
+                                                                        <div class="form-group col-md-3">
+                                                                            <label for="inputState"
+                                                                                style="color: white;">.</label>
+                                                                            <select id="inputState"
+                                                                                class="form-control">
+                                                                                <option selected>1990</option>
+                                                                                <option>...</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="form-row">
+                                                                        <div class="form-group col-md-6">
+                                                                            <label for="inputEmail4">Twetter</label>
+                                                                            <input type="Name" class="form-control"
+                                                                                id="inputEmail4"
+                                                                                placeholder="twetter.com/envato">
+                                                                        </div>
+                                                                        <div class="form-group col-md-6">
+                                                                            <label for="inputPassword4">Linked
+                                                                                In</label>
+                                                                            <input type="name" class="form-control"
+                                                                                id="inputPassword4"
+                                                                                placeholder="linled in/envato">
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="form-row">
+                                                                        <div class="form-group col-md-6">
+                                                                            <label for="inputEmail4">Facebook</label>
+                                                                            <input type="Name" class="form-control"
+                                                                                id="inputEmail4"
+                                                                                placeholder="facebook.com/envato">
+                                                                        </div>
+                                                                        <div class="form-group col-md-6">
+                                                                            <label for="inputPassword4">Google</label>
+                                                                            <input type="name" class="form-control"
+                                                                                id="inputPassword4"
+                                                                                placeholder="zachary Ruiz">
+                                                                        </div>
+                                                                    </div>
+
+
+
+                                                                    <div class="form-group">
+                                                                        <label for="inputAddress">Slogen</label>
+                                                                        <input type="text" class="form-control"
+                                                                            id="inputAddress"
+                                                                            placeholder="Land acquisition Specialist">
+                                                                    </div>
+
+
+
+                                                                    <div class="form-row">
+                                                                        <div class="form-group col-md-6">
+                                                                            <label for="inputAddress">Payment
+                                                                                Methed</label>
+                                                                            <div class="card" style="width: 100%">
+                                                                                <div class="card-body">
+                                                                                    <div class="row">
+
+                                                                                        <img src="./visa.jpg"
+                                                                                            class="c1 ml-4 mt-2"
+                                                                                            alt="..."
+                                                                                            style="width: 45px; height: 25px;">
+
+
+
+                                                                                        <div>
+                                                                                            <p class="mcr1 ml-lg-4  ">
+                                                                                                <b>Visa...8014</b><br>
+                                                                                                <small
+                                                                                                    class="text-muted">Expiry
+                                                                                                    04/22</small>
+                                                                                            </p>
+
+                                                                                        </div>
+
+
+
+
+                                                                                    </div>
+
+                                                                                </div>
+                                                                                <div class="card-footer"
+                                                                                    style="background-color: white;">
+                                                                                    <small class="text-danger"><b
+                                                                                            style="float: right;">
+                                                                                            Remove</b></small>
+                                                                                </div>
+
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="form-group col-md-6">
+                                                                            <label for="inputAddress"
+                                                                                style=" color: white;">Slogen</label>
+                                                                            <div class="card" style="width: 100%">
+                                                                                <div class="card-body">
+                                                                                    <div class="row">
+
+                                                                                        <img src="./master.jpg"
+                                                                                            class="c1 ml-4 mt-2"
+                                                                                            alt="..."
+                                                                                            style="width: 45px; height: 25px;">
+
+
+
+                                                                                        <div>
+                                                                                            <p class="mcr1 ml-lg-4  ">
+                                                                                                <b>Master...8014</b><br>
+                                                                                                <small
+                                                                                                    class="text-muted">Expiry
+                                                                                                    04/22</small>
+                                                                                            </p>
+
+                                                                                        </div>
+
+
+
+
+                                                                                    </div>
+
+                                                                                </div>
+                                                                                <div class="card-footer"
+                                                                                    style="background-color: white;">
+                                                                                    <small class="text-danger"><b
+                                                                                            style="float: right;">
+                                                                                            Remove</b></small>
+                                                                                </div>
+
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="card"
+                                                                        style="margin-top: -3%; border: #ffffff;">
+                                                                        <div class="card-body">
+                                                                            <span><i class="bi bi-credit-card text-muted ml-lg-5"
+                                                                                    style="font-size: 25px"></i>&nbsp;<b
+                                                                                    style="color: rgba(0, 204, 27, 0.932);;">
+                                                                                    ADD PAYMENT METHOD </b></span>
+
+                                                                        </div>
+                                                                    </div>
+
+                                                                </form>
+
+
+
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <!--  -->
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+
+
+
+                    </div>
+                </div>
+
+                <!-- =================================================================================================================== -->
+
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
